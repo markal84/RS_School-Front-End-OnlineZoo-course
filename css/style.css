@@ -1,0 +1,56 @@
+/* Variables 
+================================= */
+:root {
+    /* colors */
+    --body-color: #e5e5e5;
+    --black-color: #000;
+    --green-color: #4b9200;
+    --orange-color: #f9804b;
+    --orange-color_active: #e47209;
+    --yellow-color: #ffee2e;
+    --orange-gradient-color: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    --pink-gradient-color: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    --rad-color: #d31414;
+    --black_blue-color: #333b41;
+    --gray-color: #767474;
+    --light_gray-color: #f1f3f2;
+    --frosted_glass_white-color: rgba(253, 253, 255, 0.52);
+
+    
+}
+
+/* Main styles and helper classes
+================================== */
+
+body {
+    font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: var(--body-color);
+}
+
+.wrapper {
+    width: 1600px;
+    max-width: 1600px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.yellow {
+    color: var(--yellow-color);
+}
+
+/* Header styles 
+============================== */
+.header {
+    width: 100%;
+    height: 780px;
+    background-image: url(../assets/images/header_bgn.png);
+}
+/* Nav styles 
+============= */
+.nav {
+    width: 100%;
+    height: 80px;
+    background-color: var(--black-color);
+    display: flex;
+}
