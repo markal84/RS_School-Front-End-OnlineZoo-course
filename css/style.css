@@ -27,15 +27,24 @@
 body {
     font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
     font-size: 16px;
+    line-height: 22.4px;
     background-color: var(--body-color);
 }
 
 a {
     text-decoration: none;
+    transition: all ease-in-out 0.2s;
 }
 
 a:active, a:hover {
     color: var(--orange-color_active);
+    transition: all ease-in-out 0.4s;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 57.6px;
+    font-weight: 400;
 }
 
 ul {
@@ -45,14 +54,44 @@ ul {
 .wrapper {
     width: 1600px;
     max-width: 1600px;
+    background-color: var(--white-color);
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 }
 
+.block {
+    margin-top: 140px;
+}
+
 .row {
     width: 1160px;
     margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    line-height: 28.8px;
 }
 
 .absolute {
@@ -138,12 +177,12 @@ ul {
 
 .nav-list {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     padding-inline-start: 0;
 }
 
 .nav-list-item {
-    padding: 0 29px;
+    padding: 0 30px;
 }
 .nav-list-item:first-of-type {
     padding-left: 0;
@@ -191,3 +230,54 @@ ul {
     top: 533px;
     left: 170px;
 }
+
+/* Backstage section 
+================================ */
+
+#backstage {
+    position: relative;
+}
+
+.backstage-bg {
+    max-width: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    top: 12px;
+    left: 1396px;
+    margin-top: -143px;
+}
+
+#backstage h2 {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+}
+
+#backstage .row {
+    gap: 43.5px;
+}
+
+#backstage .row .col:first-of-type {
+    flex: 1.4 1 0;
+}
+
+#backstage .row .col:nth-child(2) {
+    text-align: left;
+}
+
+#backstage .row .col:nth-child(2) > div {
+    margin-top: 0.6rem;
+}
+
+#backstage .row .col:nth-child(2) > p {
+    margin-top: 0;
+}
+
+#backstage .subtitle {
+    margin-top: 2rem;    
+}
+
+.backstage-img {
+    width: 609px;
+}
+
+/* Pets section
+===================================== */
