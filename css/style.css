@@ -24,9 +24,14 @@
 /* Main styles and helper classes
 ================================== */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
     font-size: 16px;
+    font-weight: 400;
     line-height: 22.4px;
     background-color: var(--body-color);
 }
@@ -53,11 +58,11 @@ ul {
 
 .wrapper {
     width: 1600px;
-    max-width: 1600px;
     background-color: var(--white-color);
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .block {
@@ -94,8 +99,22 @@ ul {
     line-height: 28.8px;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.small-paragraph {
+    font-size: 0.93rem;
+    font-weight: 400;
+    line-height: 1.57rem;
+}
+
 .absolute {
     position: absolute;
+}
+
+.relative {
+    position: relative;
 }
 
 .button {
@@ -106,11 +125,19 @@ ul {
     text-transform: uppercase;
     padding: 18px 90px;
     cursor: pointer;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.2s;
 }
 
 .button:hover {
     background-color: var(--orange-color_active);
+}
+
+.button:active {
+    background-color: var(--green-color);
+}
+
+.rounded-circle {
+    border-radius: 50%;
 }
 
 .rounded-25 {
@@ -281,3 +308,91 @@ ul {
 
 /* Pets section
 ===================================== */
+
+#pets {
+    margin-bottom: 30px;
+}
+
+#pets .row {
+    justify-content: space-between;
+}
+
+#pets button:first-of-type {
+    left: 8.5%; 
+}
+
+#pets .button:nth-child(2) {
+    left: 87.5%;
+}
+
+.button-slider {
+    padding: 23px;
+    top: 38.5%;
+}
+
+.pets-left-palm {
+    bottom: -30px;
+    left: -590px;
+}
+
+.pets-right-palm {
+    left: 1232px;
+    bottom: -30px;
+}
+
+
+.card {
+    width: 366px;
+    height: 426px;
+    margin-top: 1.45rem;
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
+}
+
+.card:nth-child(n + 4) .card-descr {
+    padding: 3px 15px;
+}
+
+.card-descr {
+    padding: 8px 15px;
+}
+
+.card-image > img {
+    max-width: 100%;
+}
+
+.card-text {
+    justify-content: center;
+    flex: 2 1 0
+}
+
+.card-text p {
+    margin: 0;
+}
+
+.card-text p:first-of-type {
+    font-weight: 600;
+}
+
+.card-text P:nth-child(2) {
+    line-height: 120%;
+}
+
+.card-icon {
+    align-items: end;
+}
+
+.card-icon > img {
+    width: 33px;
+    height: 37px;
+}
+
+.pets-button {
+    text-align: center;
+}
+
+.pets-button > button {
+    margin: 72px 0;
+    padding-left: 58px;
+    padding-right: 58px;
+}
