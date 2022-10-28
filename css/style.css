@@ -33,7 +33,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
-    background-color: var(--body-color);
 }
 
 a {
@@ -56,13 +55,11 @@ ul {
     list-style: none;
 }
 
-.wrapper {
-    width: 1600px;
-    background-color: var(--white-color);
+.container {
+    width: 1160px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    overflow: hidden;
 }
 
 .block {
@@ -70,7 +67,7 @@ ul {
 }
 
 .row {
-    width: 1160px;
+    width: 100%;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -164,6 +161,7 @@ ul {
     background-color: var(--black-color);
     display: flex;
     justify-content: center;
+    z-index: 3;
 }
 
 .header h1 {
@@ -221,12 +219,19 @@ ul {
 
 /* Watch animal section
 ================================= */
+
+#home {
+    background-color: var(--black_blue-color);
+}
 .watch-animal {
+    margin-top: -80px;
     position: relative;
     width: 100%;
     height: 780px;
     background-image: url(../assets/images/header_bgn.png);
     background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
 }
 
 .watch-ellipse {
@@ -269,7 +274,7 @@ ul {
     max-width: 100%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     top: 12px;
-    left: 1396px;
+    right: 0;
     margin-top: -143px;
 }
 
@@ -332,11 +337,11 @@ ul {
 
 .pets-left-palm {
     bottom: -30px;
-    left: -590px;
+    left: 0;
 }
 
 .pets-right-palm {
-    left: 1232px;
+    right: 0;
     bottom: -30px;
 }
 
@@ -395,4 +400,20 @@ ul {
     margin: 72px 0;
     padding-left: 58px;
     padding-right: 58px;
+}
+
+/* Feed a friend section
+=================================== */
+#feed-friend {
+    background: var(--orange-gradient-color);
+}
+
+.card-feed {
+    height: 835px;
+    width: 100%;
+    margin-top: 69px;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    backdrop-filter: blur(2px);
+    background: var(--frosted_glass_white-color);
 }
