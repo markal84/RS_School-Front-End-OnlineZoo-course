@@ -51,6 +51,7 @@ h2 {
     font-weight: 400;
 }
 
+
 ul {
     list-style: none;
 }
@@ -89,6 +90,10 @@ ul {
 
 .flex-row {
     flex-direction: row;
+}
+
+.flex-justify-center {
+    justify-content: center;
 }
 
 .subtitle {
@@ -161,7 +166,9 @@ ul {
     background-color: var(--black-color);
     display: flex;
     justify-content: center;
-    z-index: 3;
+    position: absolute;
+    top:0;
+    left:0;
 }
 
 .header h1 {
@@ -170,7 +177,7 @@ ul {
     /*padding-left: 5px;*/
     font-weight: 500;
     margin: 0;
-    padding: 2px;
+    padding: 3px 4px;
 }
 /* Nav styles 
 ============= */
@@ -224,8 +231,6 @@ ul {
     background-color: var(--black_blue-color);
 }
 .watch-animal {
-    margin-top: -80px;
-    position: relative;
     width: 100%;
     height: 780px;
     background-image: url(../assets/images/header_bgn.png);
@@ -347,19 +352,13 @@ ul {
 
 
 .card {
-    width: 366px;
-    height: 426px;
     margin-top: 1.45rem;
     border: 1px solid var(--orange-color);
     border-radius: 5px;
 }
 
-.card:nth-child(n + 4) .card-descr {
-    padding: 3px 15px;
-}
-
 .card-descr {
-    padding: 8px 15px;
+    padding: 9px 15px;
 }
 
 .card-image > img {
@@ -387,10 +386,6 @@ ul {
     align-items: end;
 }
 
-.card-icon > img {
-    width: 33px;
-    height: 37px;
-}
 
 .pets-button {
     text-align: center;
@@ -416,4 +411,73 @@ ul {
     border-radius: 25px;
     backdrop-filter: blur(2px);
     background: var(--frosted_glass_white-color);
+}
+
+.card-feed-desc {
+    color: var(--black_blue-color);
+}
+
+.card-feed-desc-title {
+    font-size: 3rem;
+    line-height: 120%;
+    color: #FE9013;
+    text-align: center;
+}
+
+.card-feed-desc-text {
+    padding-left: 99px;
+}
+
+.card-feed-desc-text p:nth-child(2) {
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.card-feed > .row {
+    align-items: center;
+}
+
+.feed-how-it-works {
+    font-size: 2.25rem;
+    line-height: 97%;
+    margin-bottom: 44px;
+}
+
+.card-feed-icons {
+    width: 168px;
+    height: 244px;
+}
+
+.card-feed-icons-group {
+    justify-content: space-between;
+    width: 66%;
+}
+
+.card-feed-icon {
+    background: var(--white-color);
+    border: 1px var(--orange-color) solid ;
+}
+
+.icon-pay-card {
+    padding: 53px 30px;
+}
+
+.icon-pay-zoo {
+    padding: 35px 39px;
+}
+
+.icon-pay-monkey {
+    padding: 46px 20px;
+}
+
+.card-feed-icon-dsc {
+    margin-top: 30px;
+}
+
+.pad {
+    padding-top: 63px;
+}
+
+.button-feed {
+    padding: 18px 74px;
 }
