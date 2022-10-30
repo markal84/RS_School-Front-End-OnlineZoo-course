@@ -42,7 +42,7 @@ a {
 
 a:active, a:hover {
     color: var(--orange-color_active);
-    transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.3s;
 }
 
 h2 {
@@ -137,7 +137,7 @@ ul {
     text-transform: uppercase;
     padding: 18px 90px;
     cursor: pointer;
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.1s;
 }
 
 .button:hover {
@@ -573,3 +573,116 @@ progress::-webkit-progress-value {
     right: 0;
     bottom: -312px;
 }
+
+/* Footer section
+================================= */
+
+footer {
+    background: var(--black-color);
+}
+
+.footer-wrapper {
+    margin: 39px 0;
+    color: var(--white-color)
+}
+
+.button-footer {
+    padding: 18px 51px;
+    margin: 61px 0 44px 0;
+}
+
+.footer-social-icon {
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 3px;
+}
+
+.footer-social-icon img {
+    width: 26px;
+}
+
+.footer-wrapper > .row > .col:nth-child(2) {
+    justify-content: flex-end;
+}
+
+.footer-wrapper nav {
+    width: auto;
+    height: auto;
+}
+
+.footer-wrapper ul {
+    margin: 6px 0;
+    padding-inline-start: 12px;
+
+}
+
+.footer-wrapper li {
+    padding: 0 24px;
+} 
+
+.footer-wrapper > .row > .col:nth-child(3) {
+    padding-left: 5%;
+}
+
+.mail-form .subtitle {
+    margin: 0 0 16px 0;
+}
+
+
+#email {
+    width: 208px;
+    background: none;
+    color: var(--white-color);
+    border: 1px solid var(--orange-color);
+    border-radius: 0;
+    outline: none;
+    padding: 10px;
+    color: #bdbdbd;
+    transition: all ease-in-out .35s ease-in-out;
+}
+
+
+#email:focus {
+    border: 1px solid var(--green-color);;
+}
+
+#email:invalid {
+    border: 1px solid var(--rad-color);
+}
+
+input[type=submit] {
+    padding: 10px 39px;
+    cursor: pointer;
+}
+
+input[type=submit]:invalid {
+    color: var(--rad-color);
+}
+
+input[type=submit]:focus {
+    color: var(--green-color);
+}
+
+.footer-wrapper > .row > .col:nth-child(3) > .col {
+    justify-content: flex-end;
+}
+
+.footer-designed {
+    text-align: end;
+}
+
+.footer-designed > p {
+    font-weight: 100;
+    line-height: 130%;
+    filter: opacity(0.5);
+}
+
+.footer-designed > p:first-of-type {
+    margin-bottom: 10px;
+}
+
+.footer-designed > p:nth-child(2) {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
