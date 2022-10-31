@@ -40,10 +40,23 @@ a {
     transition: all ease-in-out 0.2s;
 }
 
-a:active, a:hover {
-    color: var(--orange-color_active);
-    transition: all ease-in-out 0.3s;
+a:link {
+    color: var(--white-color);
 }
+
+a:active {
+    color: var(--orange-color_active);
+}
+
+a:visited {
+    color: var(--white-color);
+}
+
+a:hover {
+    color: var(--orange-color_active);
+}
+
+
 
 h2 {
     font-size: 3rem;
@@ -443,6 +456,15 @@ ul {
     line-height: 130%;
 }
 
+a.feed-friend-link {
+    color: var(--black_blue-color);
+}
+
+.feed-friend-link:hover {
+    text-decoration: underline var(--orange-color) 1px;
+    text-underline-offset: 6px;
+}
+
 .card-feed > .row {
     align-items: center;
 }
@@ -554,6 +576,7 @@ progress {
     appearance: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 25px;
+    cursor: pointer;
 }
 
 progress::-webkit-progress-bar {
@@ -591,14 +614,31 @@ footer {
     margin: 61px 0 44px 0;
 }
 
+.footer-social-icons .col {
+    gap: 7px;
+}
+
 .footer-social-icon {
-    align-items: center;
     gap: 10px;
     margin-bottom: 3px;
 }
 
+.footer-social-icon p {
+    margin: 0;
+}
+
+.footer-social-icon a {
+    gap: 10px;
+    align-items: end;
+}
+
+.footer-social-icon a:hover svg {
+    fill: var(--green-color);
+}
+
 .footer-social-icon img {
     width: 26px;
+    height: 26px;
 }
 
 .footer-wrapper > .row > .col:nth-child(2) {
@@ -653,14 +693,17 @@ footer {
 input[type=submit] {
     padding: 10px 39px;
     cursor: pointer;
+    border: 1px solid var(--black_blue-color);
 }
 
 input[type=submit]:invalid {
     color: var(--rad-color);
+    border: 1px solid var(--rad-color);
 }
 
 input[type=submit]:focus {
     color: var(--green-color);
+    border: 1px solid var(--green-color);
 }
 
 .footer-wrapper > .row > .col:nth-child(3) > .col {
