@@ -224,5 +224,12 @@
                 </div>
             </div>
     </footer>
+    <script>
+        let alerted = localStorage.getItem('alerted') || '';
+        if (alerted != 'yes') {
+         alert('Please give me some more time to finish this task, thanks :)');
+         localStorage.setItem('alerted','yes');
+        }
+    </script>
 </body>
 </html>
