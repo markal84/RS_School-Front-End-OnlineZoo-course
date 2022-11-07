@@ -71,7 +71,9 @@
                                 <div class="progress-bar">
                                     <p class="progress-bar-title">Amount</p>
                                     <div class="progress-bar-graph flex flex-justify-center">
-                                        <div class="progress-bar-graph-scale flex flex-justify-between">
+                                            <div class="progress-bar-graph-scale flex flex-justify-between">
+                                        <!--
+                                            Disabled for now
                                             <div class="yellow-dot"></div>
                                             <div class="yellow-dot"></div>
                                             <div class="yellow-dot"></div>
@@ -79,8 +81,9 @@
                                             <div class="yellow-dot"></div>
                                             <div class="yellow-dot"></div>
                                             <div class="yellow-dot"></div>
-                                            <div class="yellow-dot"></div>
-                                        </div>
+                                            <div class="yellow-dot"></div> 
+                                        -->
+                                        </div> 
                                     </div>
                                     <div class="progress-bar-graph-amount flex flex-justify-between">
                                         <div class="progress-bar-graph-amount-inputs relative">
@@ -224,12 +227,5 @@
                 </div>
             </div>
     </footer>
-    <script>
-        let alerted = localStorage.getItem('alerted') || '';
-        if (alerted != 'yes') {
-         alert('Please give me some more time to finish this task, thanks :)');
-         localStorage.setItem('alerted','yes');
-        }
-    </script>
 </body>
 </html>

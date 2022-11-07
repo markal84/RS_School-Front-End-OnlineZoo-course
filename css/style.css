@@ -934,12 +934,12 @@ input[type=submit]:focus {
     transition: all ease-in-out 0.1s;
 }
 
-.progress-bar-graph-amount-inputs > label:hover {
+.progress-bar-graph-amount-inputs:hover > label {
     color: var(--orange-color_active);
 }
 
 .progress-bar-graph-amount-inputs > input {
-    display: none; /* for now - change later */
+    /*display: none; /* for now - change later */
     appearance: none;
     border-radius: 50%;
     background: var(--yellow-color);
@@ -947,6 +947,38 @@ input[type=submit]:focus {
     height: 10px;
     cursor: pointer;
     z-index: 2;
+    top: -30px;
+    left: 30px;
+}
+
+.progress-bar-graph-amount-inputs > input::before {
+    content: '';
+    position: absolute;
+    top: -75%;
+    left: -70%;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    outline: 1px solid var(--orange-color);
+    opacity: 0;
+    transition: all ease-in-out .1s;
+}
+
+.progress-bar-graph-amount-inputs > input::after {
+    content: '';
+    position: absolute;
+    top: -144%;
+    left: -140%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    outline: 1px solid var(--orange-color);
+    transition: all ease-in-out .1s;
+    opacity: 0;
+}
+
+.progress-bar-graph-amount-inputs:hover > input::before, .progress-bar-graph-amount-inputs:hover > input::after {
+    opacity: 1;
 }
 
 .progress-bar-donate-period {
