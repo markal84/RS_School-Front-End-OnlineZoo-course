@@ -1047,10 +1047,15 @@ input[type=submit]:focus {
     .block {
         margin-top: 114px;
     }
+    
 
     /* Header */
     .header {
         z-index: 99;
+    }
+
+    .nav-list-item {
+        padding: 0 26px;
     }
 
     /* Watch animal */
