@@ -1217,4 +1217,30 @@ input[type=submit]:focus {
         bottom: -230px;
         width: 20%;
     }
+
+    /*
+    ==== Donate page ==== */
+
+    #bg {
+        background-position: 28%;
+    }
+
+    #donate {
+        padding-bottom: 0;
+    }
+
+    .card-donate {
+        margin-top: 0;
+        padding: 1px 48px 36px 48px;
+        padding-top: 1px;
+        margin-bottom: 30px;
+    }
+
+    .card-donate .row:nth-child(3) {
+        margin-top: 37px;
+    }
+
+    .title-donate {
+        margin-top: 0;
+    }
 }
