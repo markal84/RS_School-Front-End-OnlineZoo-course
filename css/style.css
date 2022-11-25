@@ -1040,7 +1040,7 @@ input[type=submit]:focus {
         display: none;
     }
     .container {
-        width: 1000px;
+        width: 940px;
         padding: 0 30px;
     }
 
@@ -1101,6 +1101,10 @@ input[type=submit]:focus {
         flex: 0.95;
     }
 
+    #backstage .row .col:nth-child(2) {
+        padding-left: 20px;
+    }
+
     .backstage-img {
         width: 455px;
         height: 408px;
@@ -1109,11 +1113,10 @@ input[type=submit]:focus {
     /* Pets */
 
     #pets {
-        margin-bottom: 59px;
+        margin-bottom: 77px;
     }
 
     #pets .row {
-        justify-content: initial;
         gap: 20px;
     }
 
@@ -1127,30 +1130,30 @@ input[type=submit]:focus {
     }
 
     .button-slider {
-        top: 47%;
+        top: 48%;
     }
 
     #pets .button:first-of-type {
-        left: 32%;
+        left: 33.5%;
     }
 
     #pets .button:nth-child(2) {
-        left: 55.5%;
+        left: 59.5%;
     }
 
     .pets-right-palm {
-        bottom: -59px;
+        bottom: -78px;
+        right: -16px;
         width: 24%;
     }
 
     .pets-left-palm {
-        bottom: -60px;
+        bottom: -77px;
         width: 15%;
     }
 
     /* Feed a friend */
     .card-feed {
-        width: 94%;
         margin-top: 28px;
         margin-bottom: 50px;
         padding-bottom: 50px;
