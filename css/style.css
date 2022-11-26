@@ -1265,7 +1265,7 @@ input[type=submit]:focus {
     }
     /* helper classes */
     .container {
-        width: 640px;
+        width: 600px;
         padding: 0 20px;
     }
 
@@ -1358,11 +1358,11 @@ input[type=submit]:focus {
 
     #backstage h2 {
         line-height: 56px;
-        width: 72%;
+        width: 80%;
     }
 
     #backstage .row .col:nth-child(2) > div {
-        width: 72%;
+        width: 80%;
     }
 
     #backstage .subtitle {
@@ -1376,7 +1376,7 @@ input[type=submit]:focus {
     }
 
     .card {
-        flex-basis: 44%;
+        flex-basis: 47%;
         margin-top: 0;
     }
 
@@ -1406,11 +1406,11 @@ input[type=submit]:focus {
     }
     
     #pets .button:nth-child(2) {
-        left: 49.5%;
+        left: 52.5%;
     }
 
     #pets .button:first-of-type {
-        left: 34.5%;
+        left: 37.5%;
     }
 
     .pets-button > button {
@@ -1512,4 +1512,51 @@ input[type=submit]:focus {
         margin: 11px 0;
     }
 
+    .button-footer {
+        padding: 8px 51px;
+        margin: 26px 0 44px 0; 
+    }
+
+    /*
+    ==== Donate page ==== */
+
+    #bg {
+        background-position: 36%;
+        margin-top: 0;
+        height: 370px;
+    }
+
+    /* donate */
+    #donate h3 {
+        font-size: 1.5rem;
+    }
+
+    #donate .container .row:nth-child(2) > h3 {
+        font-size: 2.25rem;
+    }
+
+    .card-donate {
+        padding: 0;
+        margin-bottom: 48px;
+        padding-bottom: 19px;
+    }
+
+    .card-donate .title-donate {
+        font-size: 3rem;
+        padding-top: 28px;
+    }
+
+    .text-donate {
+        text-align: center;
+        padding: 0 47px;
+    }
+
+    .text-donate > p {
+        line-height: 28.8px;
+    }
+
+    .progress-bar-donate-input {
+        padding: 10px 1px;
+        width: 173px;
+    }
 }
