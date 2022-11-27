@@ -1741,6 +1741,7 @@ input[type=submit]:focus {
     #testimonials {
         margin-top: 25px;
         margin-bottom: 61px;
+        width: 320px;
     }
 
     #testimonials .container {
@@ -1787,6 +1788,111 @@ input[type=submit]:focus {
 
     .footer-wrapper li {
         padding: 0 13px;
+    }
+
+    /*
+    ==== Donate page ==== */
+
+    #bg {
+        background-position: 34%;
+        margin-top: 24px;
+        height: 196px;
+        background-size: cover;
+    }
+
+    #donate .container .row:nth-child(2) > h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-feed {
+        padding-top: 20px;
+        margin-top: 3px;
+        margin-bottom: 19px;
+        padding-bottom: 5px;
+    }
+
+    .title-donate {
+        font-size: 1.5rem!important;
+        padding-top: 0!important;
+        margin-top: 0!important;
+    }
+
+    .text-donate {
+        padding: 0;
+    }
+
+    .text-donate > p {
+        font-size: 1rem!important;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .card-donate .row:nth-child(3) {
+        margin-top: 0;
+        gap: 15px;
+    }
+
+    .card-donate .row:nth-child(3) div:first-of-type {
+        flex-basis: 30%;
+    }
+
+    .card-donate .row:nth-child(3) div:first-of-type p:first-of-type {
+        font-size: 2.5rem;
+        margin-bottom: 14px;
+    }
+
+    .card-donate .row:nth-child(3) div:nth-child(2) p {
+        font-size: 1rem;
+    }
+
+    .card-donate .row:nth-child(3) div:first-of-type p:nth-child(2) {
+        font-size: 0.56rem;
+        margin-top: 0;
+    }
+
+    .animal-icon-donate {
+        width: 160px;
+        height: 138px;
+    }
+
+    .donate-form {
+        margin: 0;
+    }
+
+    .progress-bar-title {
+        margin-top: 0;
+        margin-bottom: 0.1rem;
+    }
+
+    .progress-bar-graph {
+        height: 16px;
+        margin-bottom: 0;
+    }
+
+    .progress-bar-graph-amount {
+        margin-bottom: 26px;
+        justify-content: space-around;
+    }
+
+    .progress-bar-graph-scale {
+        width: 260px;
+        height: 1px;
+    }
+
+    .progress-bar-graph-amount-inputs > label {
+        font-size: 0.813rem;
+    }
+
+    .progress-bar-graph-amount-inputs > input {
+        width: 5px;
+        height: 5px;
+        top: -12px;
+        left: 5px;
+    }
+
+    .progress-bar-donate span {
+        top: 27%;
+        left: 73%;
     }
 
 }   
