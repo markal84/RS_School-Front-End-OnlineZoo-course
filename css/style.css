@@ -35,6 +35,10 @@ body {
     line-height: 22.4px;
 }
 
+.page-wrapper {
+    overflow: hidden; /* experimnetal */
+}
+
 a {
     text-decoration: none;
     transition: all ease-in-out 0.2s;
@@ -101,6 +105,10 @@ ul {
 }
 
 .hide-on-media-640 {
+    display: block;
+}
+
+.hide-on-media-320 {
     display: block;
 }
 
@@ -1560,3 +1568,225 @@ input[type=submit]:focus {
         width: 173px;
     }
 }
+
+/* 320px 
+============================== */
+@media only screen and (max-width: 320px) {
+
+    .hide-on-media-320 {
+        display: none!important;
+    }
+    .container {
+        width: 300px;
+        padding: 0 10px;
+    }
+
+    .subtitle {
+        line-height: initial;
+        font-size: 1.47rem;
+    }
+
+    .test-name-loc .small-paragraph {
+        font-size: 0.938rem;
+    }
+
+    /* Header */
+    .header {
+        width: 320px;
+    }
+
+    /* Home */
+    #home {
+        width: 320px;
+    }
+
+    .watch-animal {
+        margin-top: 34px;
+        height: 187px;
+    }
+
+    .watch-ellipse {
+        width: 119px;
+        height: 119px;
+        top: 56px;
+        left: calc(50% - 367px/2 + 186px)
+    }
+
+    .watch-ellipse > h2 {
+        font-size: 1.68rem;
+        top: 18px;
+        left: 17px;
+        letter-spacing: 0.09rem;
+    }
+
+    .watch-ellipse > button {
+        top: 184px;
+        left: -144px;
+        padding: 19px 74px;
+    }
+
+    /* Backstage */
+
+    #backstage {
+        margin-top: 105px;
+    }
+
+    #backstage h2 {
+        font-size: 1.5rem;
+        line-height: 28.9px;
+        margin-bottom: 0.6rem;
+    }
+
+    .backstage-bg {
+        width: 23%;
+        top: 76px;
+        right: -42px;
+    }
+
+    #backstage .row .col:nth-child(2) > p {
+        line-height: initial;
+    }
+
+    #backstage .row .col:nth-child(2) > div {
+        width: 100%;
+    }
+
+    /* pets */
+    #pets {
+        margin-top: 8px;
+    }
+
+    #pets .container {
+        width: 286px;
+    }
+
+    #pets .row {
+        gap: 20px;
+    }
+
+    .card {
+        flex-basis: auto;
+    }
+
+    .card:nth-child(5), .card:nth-child(6) {
+        margin-top: 0;
+    }
+
+    #pets .button:first-of-type {
+        padding-left: 44px;
+        padding-right: 60px;
+        margin: 14px 0;
+    }
+
+    .pets-right-palm {
+        bottom: -50px;
+        right: -19px;
+        width: 28%;
+    }
+
+    .pets-left-palm {
+        bottom: -47px;
+        width: 15%;
+    }
+
+    /* feed friend */
+    #feed-friend {
+        width: 320px;
+    }
+
+    #feed-friend .container {
+        width: 300px;
+        padding: 0 10px;
+    }
+
+    .card-feed {
+        margin-top: 22px;
+        margin-bottom: 19px;
+        padding-bottom: 41px;
+    }
+
+    .card-feed-desc-title {
+        font-size: 1.5rem;
+        margin-top: 18px;
+    }
+
+    .card-feed-desc-text {
+        padding-left: 1px;
+    }
+
+    .card-feed-desc-text .subtitle {
+        font-size: 1.125rem;
+        text-align: center;
+        margin-top: 11px;
+    }
+
+    .feed-how-it-works {
+        font-size: 1.5rem;
+    }
+
+    .card-feed-icons-group {
+        width: 57%;
+    }
+
+    .card-feed-icon-dsc {
+        margin-top: 12px;
+    }
+
+    .pad {
+        padding-top: 20px;
+    }
+
+    /* testimonials */
+
+    #testimonials {
+        margin-top: 25px;
+        margin-bottom: 61px;
+    }
+
+    #testimonials .container {
+        width: 300px;
+        padding: 0 10px;
+    }
+
+    #testimonials h3 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    #testimonials .button {
+        margin-top: 13px;
+    }
+
+    .test-leaf-picture {
+        bottom: -103px;
+        right: -9px;
+        transform: rotate(0.95turn);
+    }
+
+    /* footer */
+    footer {
+        width: 320px;
+    }
+    
+    .footer-logo {
+        text-align: center;
+    }
+
+    .button-footer {
+        padding: 18px 45px;
+        margin: 57px 0 44px 9px;
+    }
+
+    .footer-social-icons .col {
+        flex-direction: row;
+        justify-content: space-around;
+        flex: 0.5;
+        padding: 0 40px;
+        margin-bottom: 30px;
+    }
+
+    .footer-wrapper li {
+        padding: 0 13px;
+    }
+
+}   
