@@ -1699,10 +1699,8 @@ input[type=submit]:focus {
         padding: 0 10px;
     }
 
-    .card-feed {
-        margin-top: 22px;
-        margin-bottom: 19px;
-        padding-bottom: 41px;
+    .mobile-320 {
+        padding-bottom: 41px !important;
     }
 
     .card-feed-desc-title {
@@ -1752,6 +1750,10 @@ input[type=submit]:focus {
     #testimonials h3 {
         font-size: 1.5rem;
         margin-bottom: 8px;
+    }
+
+    .test-card-review .small-paragraph {
+        font-size: 1rem;
     }
 
     #testimonials .button {
