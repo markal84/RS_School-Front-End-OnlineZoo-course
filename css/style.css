@@ -370,17 +370,17 @@ ul {
     justify-content: space-between;
 }
 
-#pets button:first-of-type {
-    left: -7%; 
+#prev {
+    left: -6.5%; 
 }
 
-#pets .button:nth-child(2) {
+#next {
     left: 101.5%;
 }
 
 .button-slider {
     padding: 23px;
-    top: 47.5%;
+    top: 39%;
 }
 
 .pets-left-palm {
@@ -425,9 +425,9 @@ ul {
     z-index: 3;
 }
 
-.card-animate:hover p {
+/*.card-animate:hover p {
     transform: translateY(120px);
-}
+}*/
 
 .card-descr {
     padding: 9px 15px;
@@ -1898,3 +1898,17 @@ input[type=submit]:focus {
     }
 
 }   
+
+
+/* All classes created during week4 - js  interactions
+================================== */
+
+#carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+    height: 0;
+}
