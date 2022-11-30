@@ -5,9 +5,23 @@
 const burgerWrapper = document.querySelector(".burger-menu");
 const burgerMenu = document.querySelector(".burger-menu-card");
 
+//create overlay
+//const pageWrapper = document.querySelector(".page-wrapper");
+const overlay = document.createElement("div");
+overlay.classList.add("overlay-bg");
+document.querySelector("body").appendChild(overlay);
+console.log(document.querySelector("body"));
+
 burgerWrapper.addEventListener("click", () => {
   burgerWrapper.classList.toggle("open");
   burgerMenu.classList.toggle("show-burger-card");
+  overlay.classList.toggle("show-overlay");
+});
+
+overlay.addEventListener("click", () => {
+  burgerWrapper.classList.remove("open");
+  burgerMenu.classList.remove("show-burger-card");
+  overlay.classList.remove("show-overlay");
 });
 
 //

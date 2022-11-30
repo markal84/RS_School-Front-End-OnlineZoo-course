@@ -1907,7 +1907,7 @@ input[type=submit]:focus {
 /* All classes created during week4 - js  interactions
 ================================== */
 
-/* Burger menu */
+/* ===== Burger menu ===== */
 
 .burger-menu {
     display: flex;
@@ -2003,8 +2003,26 @@ input[type=submit]:focus {
   transform: rotate(-90deg)
 }
 
+/* overlay */
 
-/* Carousel */
+.overlay-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    transition: display 0.25s ease-in-out;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-bg.show-overlay {
+    display: block;
+}
+
+
+/* ===== Carousel ====== */
 #carousel {
     overflow: auto;
     scroll-behavior: smooth;
