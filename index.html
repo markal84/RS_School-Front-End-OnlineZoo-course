@@ -32,7 +32,21 @@
                             <li class="nav-list-item hide-on-media-640"><a class="nav-list-item-link" href="./donate.html" target="_blank">Donate</a></li>
                             <li class="nav-list-item hide-on-media-640"><a class="nav-list-item-link" href="#">Contact us</a></li>
                         </ul>
-                        <div class="burger-menu"><img src="./assets/icons/burger_menu.svg" alt="hamburger menu"></div>
+                        <div class="burger-menu">
+                            <p class="burger"></p>
+                        </div>
+                        <div class="burger-menu-card">
+                            <ul class="burger-list">
+                                <li class="nav-list-item"><a class="nav-list-item-link active" href="index.html">About</a></li>
+                                <li class="nav-list-item"><a class="nav-list-item-link" href="#">Map</a></li>
+                                <li class="nav-list-item"><a class="nav-list-item-link" href="#">Zoos</a></li>
+                                <li class="nav-list-item"><a class="nav-list-item-link" href="./donate.html" target="_blank">Donate</a></li>
+                                <li class="nav-list-item"><a class="nav-list-item-link" href="#">Contact us</a></li>
+                                <div class="nav-design">
+                                    <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="white" target="_blank">Designed by &copy; </a>
+                                </div>        
+                            </ul>
+                        </div>
                         <div class="nav-design hide-on-media-640">
                             <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="white" target="_blank">Designed by &copy; </a>
                         </div>
@@ -77,112 +91,217 @@
                     <img class="pets-right-palm absolute" src="./assets/images/pets_palm_right_bg.png" alt="palm2">
                     <button id="prev" class="button button-slider rounded-circle absolute hide-on-media-320">&#8592;</button>
                     <button id="next" class="button button-slider rounded-circle absolute hide-on-media-320">&#8594;</button>    
-                    <div id="carousel">
-                        <div id="content" class="row flex flex-row relative">
-                            <div class="card">
-                                <div class="card-animate absolute flex flex-justify-center">
-                                    <p>Pandas</p>
-                                </div>
-                                <div class="col card-image">
-                                    <img src="./assets/images/pets_panda.png" alt="panda">
-                                </div>
-                                <div class="col card-descr flex-row">
-                                    <div class="col card-text">
-                                        <p class="uppercase">giant pandas</p>
-                                        <p class="small-paragraph">Native to Southwest China</p>
+                    <div id="carousel-wrapper">
+                        <div id="carousel">
+                            <div id="content" class="row relative">
+                                <div class="card">
+                                    <div class="card-animate absolute flex flex-justify-center">
+                                        <p>Pandas</p>
                                     </div>
-                                    <div class="col card-icon">
-                                        <img src="./assets/icons/pets_banana.svg" alt="banana">
+                                    <div class="col card-image">
+                                        <img src="./assets/images/pets_panda.png" alt="panda">
+                                    </div>
+                                    <div class="col card-descr flex-row">
+                                        <div class="col card-text">
+                                            <p class="uppercase">giant pandas</p>
+                                            <p class="small-paragraph">Native to Southwest China</p>
+                                        </div>
+                                        <div class="col card-icon">
+                                            <img src="./assets/icons/pets_banana.svg" alt="banana">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-animate absolute flex flex-justify-center">
+                                        <p>Eagles</p>
+                                    </div>
+                                    <div class="col card-image">
+                                        <img src="./assets/images/pets_eagle.png" alt="eagle">
+                                    </div>
+                                    <div class="col card-descr flex-row">
+                                        <div class="col card-text">
+                                            <p class="uppercase">eagles</p>
+                                            <p class="small-paragraph">Native to South America</p>
+                                        </div>
+                                        <div class="col card-icon">
+                                            <img src="./assets/icons/pets_meat_fish.svg" alt="meat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-animate absolute flex flex-justify-center">
+                                        <p>Gorillas</p>
+                                    </div>
+                                    <div class="col card-image">
+                                        <img src="./assets/images/pets_gorilla.png" alt="gorilla">
+                                    </div>
+                                    <div class="col card-descr flex-row">
+                                        <div class="col card-text">
+                                            <p class="uppercase">gorillas</p>
+                                            <p class="small-paragraph">Native to Congo</p>
+                                        </div>
+                                        <div class="col card-icon">
+                                            <img src="./assets/icons/pets_banana.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-animate absolute flex flex-justify-center">
+                                        <p>Gorillas</p>
+                                    </div>
+                                    <div class="col card-image">
+                                        <img src="./assets/images/pets_gorilla.png" alt="gorilla">
+                                    </div>
+                                    <div class="col card-descr flex-row">
+                                        <div class="col card-text">
+                                            <p class="uppercase">gorillas</p>
+                                            <p class="small-paragraph">Native to Congo</p>
+                                        </div>
+                                        <div class="col card-icon">
+                                            <img src="./assets/icons/pets_banana.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-animate absolute flex flex-justify-center">
+                                        <p>Gorillas</p>
+                                    </div>
+                                    <div class="col card-image">
+                                        <img src="./assets/images/pets_gorilla.png" alt="gorilla">
+                                    </div>
+                                    <div class="col card-descr flex-row">
+                                        <div class="col card-text">
+                                            <p class="uppercase">gorillas</p>
+                                            <p class="small-paragraph">Native to Congo</p>
+                                        </div>
+                                        <div class="col card-icon">
+                                            <img src="./assets/icons/pets_banana.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-animate absolute flex flex-justify-center">
+                                        <p>Gorillas</p>
+                                    </div>
+                                    <div class="col card-image">
+                                        <img src="./assets/images/pets_gorilla.png" alt="gorilla">
+                                    </div>
+                                    <div class="col card-descr flex-row">
+                                        <div class="col card-text">
+                                            <p class="uppercase">gorillas</p>
+                                            <p class="small-paragraph">Native to Congo</p>
+                                        </div>
+                                        <div class="col card-icon">
+                                            <img src="./assets/icons/pets_banana.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-animate absolute flex flex-justify-center">
+                                        <p>Gorillas</p>
+                                    </div>
+                                    <div class="col card-image">
+                                        <img src="./assets/images/pets_gorilla.png" alt="gorilla">
+                                    </div>
+                                    <div class="col card-descr flex-row">
+                                        <div class="col card-text">
+                                            <p class="uppercase">gorillas</p>
+                                            <p class="small-paragraph">Native to Congo</p>
+                                        </div>
+                                        <div class="col card-icon">
+                                            <img src="./assets/icons/pets_banana.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-animate absolute flex flex-justify-center">
+                                        <p>Gorillas</p>
+                                    </div>
+                                    <div class="col card-image">
+                                        <img src="./assets/images/pets_gorilla.png" alt="gorilla">
+                                    </div>
+                                    <div class="col card-descr flex-row">
+                                        <div class="col card-text">
+                                            <p class="uppercase">gorillas</p>
+                                            <p class="small-paragraph">Native to Congo</p>
+                                        </div>
+                                        <div class="col card-icon">
+                                            <img src="./assets/icons/pets_banana.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-animate absolute flex flex-justify-center">
+                                        <p>Gorillas</p>
+                                    </div>
+                                    <div class="col card-image">
+                                        <img src="./assets/images/pets_gorilla.png" alt="gorilla">
+                                    </div>
+                                    <div class="col card-descr flex-row">
+                                        <div class="col card-text">
+                                            <p class="uppercase">gorillas</p>
+                                            <p class="small-paragraph">Native to Congo</p>
+                                        </div>
+                                        <div class="col card-icon">
+                                            <img src="./assets/icons/pets_banana.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card third">
+                                    <div class="card-animate absolute flex flex-justify-center">
+                                        <p>Slothi the man</p>
+                                    </div>
+                                    <div class="col card-image">
+                                        <img src="./assets/images/pets_sloth.png" alt="sloth">
+                                    </div>
+                                    <div class="col card-descr flex-row">
+                                        <div class="col card-text">
+                                            <p class="uppercase">two-toed sloth</p>
+                                            <p class="small-paragraph">Mesoamerica, South Amercia</p>
+                                        </div>
+                                        <div class="col card-icon">
+                                            <img src="./assets/icons/pets_banana.svg" alt="banana">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card third hide-on-media-640">
+                                    <div class="card-animate absolute flex flex-justify-center">
+                                        <p>Cheetahs</p>
+                                    </div>
+                                    <div class="col card-image">
+                                        <img src="./assets/images/pets_cheetach.png" alt="cheetach">
+                                    </div>
+                                    <div class="col card-descr flex-row">
+                                        <div class="col card-text">
+                                            <p class="uppercase">cheetahs</p>
+                                            <p class="small-paragraph">Native to Africa</p>
+                                        </div>
+                                        <div class="col card-icon">
+                                            <img src="./assets/icons/pets_meat_fish.svg" alt="meat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card third hide-on-media-640">
+                                    <div class="card-animate absolute flex flex-justify-center">
+                                        <p>Penguins</p>
+                                    </div>
+                                    <div class="col card-image">
+                                        <img src="./assets/images/pets_penguin.png" alt="penguin">
+                                    </div>
+                                    <div class="col card-descr flex-row">
+                                        <div class="col card-text">
+                                            <p class="uppercase">penguins</p>
+                                            <p class="small-paragraph">Native to Anartcica</p>
+                                        </div>
+                                        <div class="col card-icon">
+                                            <img src="./assets/icons/pets_meat_fish.svg" alt="fish">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-animate absolute flex flex-justify-center">
-                                    <p>Eagles</p>
-                                </div>
-                                <div class="col card-image">
-                                    <img src="./assets/images/pets_eagle.png" alt="eagle">
-                                </div>
-                                <div class="col card-descr flex-row">
-                                    <div class="col card-text">
-                                        <p class="uppercase">eagles</p>
-                                        <p class="small-paragraph">Native to South America</p>
-                                    </div>
-                                    <div class="col card-icon">
-                                        <img src="./assets/icons/pets_meat_fish.svg" alt="meat">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-animate absolute flex flex-justify-center">
-                                    <p>Gorillas</p>
-                                </div>
-                                <div class="col card-image">
-                                    <img src="./assets/images/pets_gorilla.png" alt="gorilla">
-                                </div>
-                                <div class="col card-descr flex-row">
-                                    <div class="col card-text">
-                                        <p class="uppercase">gorillas</p>
-                                        <p class="small-paragraph">Native to Congo</p>
-                                    </div>
-                                    <div class="col card-icon">
-                                        <img src="./assets/icons/pets_banana.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card third">
-                                <div class="card-animate absolute flex flex-justify-center">
-                                    <p>Slothi the man</p>
-                                </div>
-                                <div class="col card-image">
-                                    <img src="./assets/images/pets_sloth.png" alt="sloth">
-                                </div>
-                                <div class="col card-descr flex-row">
-                                    <div class="col card-text">
-                                        <p class="uppercase">two-toed sloth</p>
-                                        <p class="small-paragraph">Mesoamerica, South Amercia</p>
-                                    </div>
-                                    <div class="col card-icon">
-                                        <img src="./assets/icons/pets_banana.svg" alt="banana">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card third hide-on-media-640">
-                                <div class="card-animate absolute flex flex-justify-center">
-                                    <p>Cheetahs</p>
-                                </div>
-                                <div class="col card-image">
-                                    <img src="./assets/images/pets_cheetach.png" alt="cheetach">
-                                </div>
-                                <div class="col card-descr flex-row">
-                                    <div class="col card-text">
-                                        <p class="uppercase">cheetahs</p>
-                                        <p class="small-paragraph">Native to Africa</p>
-                                    </div>
-                                    <div class="col card-icon">
-                                        <img src="./assets/icons/pets_meat_fish.svg" alt="meat">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card third hide-on-media-640">
-                                <div class="card-animate absolute flex flex-justify-center">
-                                    <p>Penguins</p>
-                                </div>
-                                <div class="col card-image">
-                                    <img src="./assets/images/pets_penguin.png" alt="penguin">
-                                </div>
-                                <div class="col card-descr flex-row">
-                                    <div class="col card-text">
-                                        <p class="uppercase">penguins</p>
-                                        <p class="small-paragraph">Native to Anartcica</p>
-                                    </div>
-                                    <div class="col card-icon">
-                                        <img src="./assets/icons/pets_meat_fish.svg" alt="fish">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
+                        </div> 
+                    </div>
+
                     <div class="row row-flex pets-button">
                         <button class="button rounded-25">choose your favorite</button>
                     </div>

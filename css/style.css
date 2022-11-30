@@ -199,6 +199,10 @@ ul {
     color: var(--white-color);
 }
 
+.orange {
+    color: var(--orange-color_active) !important;
+}
+
 /* Header styles 
 ============================== */
 .header {
@@ -385,11 +389,11 @@ ul {
 
 .pets-left-palm {
     bottom: -30px;
-    left: 0;
+    left: -214px;
 }
 
 .pets-right-palm {
-    right: 0;
+    right: -233px;
     bottom: -30px;
 }
 
@@ -1903,12 +1907,124 @@ input[type=submit]:focus {
 /* All classes created during week4 - js  interactions
 ================================== */
 
+/* Burger menu */
+
+.burger-menu {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.burger-menu-card {
+    position: fixed;
+    top: 35px;
+    right: 0;
+    width: 100%;
+    background-color: var(--light_gray-color);
+    z-index: 98;
+    transform: translateX(-125%);
+    transition: transform 0.25s ease-in-out;
+}
+
+.show-burger-card {
+    transform: translateX(0);
+}
+
+.burger-list {
+    padding-inline-start: 0;
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+.burger-list .nav-list-item {
+    padding: 10px 30px;
+}
+
+.burger-list .nav-list-item a, .burger-list .nav-design a {
+    color: var(--black_blue-color);
+}
+
+.burger-list .nav-design {
+    padding: 10px 30px;
+}
+
+.burger {
+    position: relative;
+    margin: 0 auto;
+}
+
+.burger,
+.burger:before,
+.burger:after {
+  padding: 0;
+  background-color: white;
+  width: 90%;
+  height: 2px;
+  transition: margin .1s .2s, transform .2s;
+}
+
+.burger:before,
+.burger:after {
+  margin: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.burger:before {
+    margin-top: -8px;
+}
+  
+.burger:after {
+    margin-top: 8px;
+}
+
+/*open burger*/
+.open .burger {
+  transform: rotate(45deg);
+}
+
+.open .burger,
+.open .burger:before,
+.open .burger:after {
+  transition: margin .2s, transform .1s .2s;
+}
+
+.open .burger:before,
+.open .burger:after {
+  margin-top: 0;
+}
+
+.open .burger:after {
+  transform: rotate(-90deg)
+}
+
+
+/* Carousel */
 #carousel {
     overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    max-width: 100%;
 }
 
 #carousel::-webkit-scrollbar {
     height: 0;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 366px);
+    grid-template-rows: auto auto;
+    grid-auto-rows: 0px;
+    margin: 0 auto;
+    gap: 30px;
+    row-gap: 3px;
+    width: 2370px;
+    overflow: auto;
+    justify-content: unset !important;
 }
