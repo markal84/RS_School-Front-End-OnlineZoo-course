@@ -9,7 +9,7 @@ const burgerMenu = document.querySelector(".burger-menu-card");
 //const pageWrapper = document.querySelector(".page-wrapper");
 const overlay = document.createElement("div");
 overlay.classList.add("overlay-bg");
-document.querySelector("body").appendChild(overlay);
+document.querySelector("body").prepend(overlay);
 console.log(document.querySelector("body"));
 
 burgerWrapper.addEventListener("click", () => {
