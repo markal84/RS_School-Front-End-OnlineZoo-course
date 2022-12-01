@@ -1,30 +1,37 @@
 const amounts = document.querySelectorAll(
-  ".progress-bar-graph-amount-inputs label"
+  ".progress-bar-graph-amount-inputs input"
 );
-console.log(amounts);
-
-//circles selector and amounts
+const labels = document.querySelectorAll("label");
+//console.log(amounts);
 
 function selectAmount(e) {
   let cicrleClicked = e.target;
-  let orangeCircleSibling = cicrleClicked.nextElementSibling;
-  //console.log(orangeCircles);
-  //console.log(cicrleClicked);
+  let label = cicrleClicked.previousElementSibling;
+
   for (let i = 0; i < amounts.length; i++) {
-    let orangeCircles = amounts[i].nextElementSibling;
-    //console.log(label);
-    orangeCircles.style.setProperty("--zero-opacity", "0");
-    //console.log(inputTest);
-    amounts[i].classList.remove("orange");
-    //inputTest.style.setProperty("--zero-opacity", "0");
+    let lebels = amounts[i].previousElementSibling;
+    lebels.classList.remove("orange");
+    amounts[i].style.setProperty("--zero-opacity", "0");
   }
-  cicrleClicked.classList.add("orange");
-  orangeCircleSibling.style.setProperty("--zero-opacity", "1");
+
+  cicrleClicked.style.setProperty("--zero-opacity", "1");
+  label.classList.add("orange");
 }
 
 amounts.forEach((el) => {
   el.addEventListener("click", selectAmount);
 });
+
+// label 100 selected by default on page load
+
+for (let label of labels) {
+  if (label.getAttribute("for") === "100") {
+    label.classList.add("orange");
+    label.nextElementSibling.style.setProperty("--zero-opacity", "1");
+  }
+}
+
+// put selected amount value in amout input
 
 //amount input to max 4 numbers
 
@@ -32,8 +39,10 @@ const anotherAmount = document.querySelector("#donateField");
 //console.log(anotherAmount);
 
 anotherAmount.addEventListener("input", (e) => {
-  console.log("click");
-  if (e.target.value.length > 4) {
+  console.log(e.target.value);
+  const maxLength = 4;
+  if (e.target.value.length >= maxLength) {
+    console.log("exeedded - find something to prevent more characters");
     return false;
   }
 });

@@ -2050,3 +2050,14 @@ input[type=submit]:focus {
 
 /* ===== Donate site ====== */
 
+.progress-bar-graph-amount-inputs > label.active {
+    color: var(--orange-color_active);
+}
+
+.progress-bar-graph-amount-inputs > input.active::after {
+    opacity: 1;
+}
+
+.progress-bar-graph-amount-inputs > input.active::before {
+    opacity: 1;
+}
