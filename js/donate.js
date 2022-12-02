@@ -1,3 +1,9 @@
+// Imports
+
+import { showBurgerMenu } from "./script.js";
+
+// Constans
+
 const amounts = document.querySelectorAll(
   ".progress-bar-graph-amount-inputs input"
 );
@@ -68,3 +74,5 @@ anotherAmount.addEventListener("input", (e) => {
   }
   selectCircles();
 });
+
+showBurgerMenu();
