@@ -32,7 +32,7 @@ showBurgerMenu();
 //  Carousel
 //
 
-const carousel = () => {
+/*const carousel = () => {
   const gap = 30;
 
   const carousel = document.querySelector("#carousel");
@@ -54,4 +54,4 @@ const carousel = () => {
   });
 };
 
-carousel();
+carousel();*/

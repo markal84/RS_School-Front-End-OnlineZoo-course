@@ -74,5 +74,3 @@ anotherAmount.addEventListener("input", (e) => {
   }
   selectCircles();
 });
-
-showBurgerMenu();
