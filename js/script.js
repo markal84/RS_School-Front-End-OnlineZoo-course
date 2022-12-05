@@ -60,7 +60,7 @@ window.addEventListener("load", carousel);
 // Testimonials popup when width <= 640px
 //
 const popup = document.querySelector(".testimonials-popup");
-const review = document.querySelector(".test-card-dsc");
+const review = document.querySelector(".test-card");
 console.log(popup);
 console.log(review);
 
