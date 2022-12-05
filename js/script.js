@@ -75,3 +75,14 @@ const createPopup = (e) => {
 };
 
 review.addEventListener("click", createPopup);
+
+//alert reminder
+const setAlert = () => {
+  const alerted = localStorage.getItem("alerted") || "";
+  if (alerted != "yes") {
+    alert("Hi. Please give me time till Friday to finish task. Thanks!");
+    localStorage.setItem("alerted", "yes");
+  }
+};
+
+window.addEventListener("load", setAlert);
