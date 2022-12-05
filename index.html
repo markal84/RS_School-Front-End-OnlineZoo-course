@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <script src="./js/script.js" type="module" defer></script>
+    <script src="https://kit.fontawesome.com/e949b2151f.js" crossorigin="anonymous" defer></script>
     <title>Online Zoo</title>
 </head>
 <body>
@@ -379,8 +380,13 @@
                     <div class="row flex flex-row flex-justify-center">
                         <h3>Testimonials</h3>
                     </div>
-                    <div class="row flex flex-row flex-justify-between cards-row">
-                        <div class="test-card">
+                    <div id="testimonialsContainer" class="relative row flex flex-row flex-justify-between cards-row">
+                        <div class="testimonials-popup">
+                            <span class="testimonials-popup-close absolute">
+                                <i class="fa-solid fa-xmark fa-lg"></i>
+                            </span>
+                        </div>
+                        <div id="card1" class="test-card">
                             <div class="col test-card-dsc">
                                 <div class="row flex">
                                     <div class="col">
@@ -405,7 +411,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="test-card">
+                        <div id="card2" class="test-card">
                             <div class="col test-card-dsc">
                                 <div class="row flex">
                                     <div class="col">

@@ -1,6 +1,7 @@
 // Imports
 
 import { showBurgerMenu } from "./script.js";
+window.addEventListener("load", showBurgerMenu);
 
 // Constans
 

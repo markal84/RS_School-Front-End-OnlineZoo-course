@@ -1495,6 +1495,10 @@ input[type=submit]:focus {
         margin-bottom: 12px;
     }
 
+    .test-card-review {
+        cursor: pointer;
+    }
+
     .test-name-loc {
         flex: 12;
     }
@@ -2046,6 +2050,34 @@ input[type=submit]:focus {
     width: 2370px;
     overflow: auto;
     justify-content: unset !important;
+}
+
+/* ===== Testimonials ====== */
+
+.testimonials-popup {
+    position: absolute;
+    width: 318px;
+    max-width: 100%;
+    background-color: var(--white-color);
+    height: 420px; /* just fopr test */
+    left: 25%;
+    top: -16%;
+    border: 1px solid var(--light_gray-color);
+    z-index: 101;
+}
+
+.testimonials-popup-close {
+    width: 25px;
+    height: 25px;
+    top: 3%;
+    left: 90%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.testimonials-popup-close i {
+    font-size: 1.3rem;
+    color: var(--orange-color);
 }
 
 /* ===== Donate site ====== */

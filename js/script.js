@@ -26,13 +26,13 @@ export const showBurgerMenu = () => {
   });
 };
 
-showBurgerMenu();
+window.addEventListener("load", showBurgerMenu);
 
 //
 //  Carousel
 //
 
-/*const carousel = () => {
+const carousel = () => {
   const gap = 30;
 
   const carousel = document.querySelector("#carousel");
@@ -54,4 +54,24 @@ showBurgerMenu();
   });
 };
 
-carousel();*/
+window.addEventListener("load", carousel);
+
+//
+// Testimonials popup when width <= 640px
+//
+const popup = document.querySelector(".testimonials-popup");
+const review = document.querySelector(".test-card-dsc");
+console.log(popup);
+console.log(review);
+
+const createPopup = (e) => {
+  const clickedPopup = e.target;
+  console.log(clickedPopup);
+  const createdCard = document.createElement("div");
+  createdCard.classList.add("test-card");
+  const cardContent = document.createTextNode(`${clickedPopup.innerHTML}`);
+  createdCard.appendChild(cardContent);
+  popup.appendChild(createdCard);
+};
+
+review.addEventListener("click", createPopup);
