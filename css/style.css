@@ -2059,11 +2059,11 @@ input[type=submit]:focus {
     width: 318px;
     max-width: 100%;
     background-color: var(--white-color);
-    height: 420px; /* just fopr test */
     left: 25%;
     top: -16%;
     border: 1px solid var(--light_gray-color);
     z-index: 101;
+    border-radius: 5px;
 }
 
 .testimonials-popup-close {
@@ -2078,6 +2078,16 @@ input[type=submit]:focus {
 .testimonials-popup-close i {
     font-size: 1.3rem;
     color: var(--orange-color);
+}
+
+.test-card-popup {
+    width: 80%;
+    border-radius: 20px;
+    padding: 0 2%;
+    background: var(--light_gray-color);
+    border: 2px solid var(--orange-color);
+    overflow: auto;
+    margin: 20px 36px 17px 17px;
 }
 
 /* ===== Donate site ====== */

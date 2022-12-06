@@ -60,21 +60,69 @@ window.addEventListener("load", carousel);
 // Testimonials popup when width <= 640px
 //
 const popup = document.querySelector(".testimonials-popup");
-const review = document.querySelector(".test-card");
-console.log(popup);
-console.log(review);
+const reviews = document.querySelectorAll(".test-card-review");
+//const cards = document.querySelectorAll(".test-card");
+//console.log(popup);
+//console.log(reviews);
 
 const createPopup = (e) => {
   const clickedPopup = e.target;
-  console.log(clickedPopup);
+  const parent = clickedPopup.parentNode;
+  const card = parent.parentNode;
+  const userName = card.querySelector(".user-name").innerHTML;
+  const userImg = card.querySelector(".user-img").src;
+  const userLoc = card.querySelector(".user-location").innerHTML;
+  const userRev = card.querySelector(".user-review").innerHTML;
+  //console.log(userImg);
   const createdCard = document.createElement("div");
-  createdCard.classList.add("test-card");
-  const cardContent = document.createTextNode(`${clickedPopup.innerHTML}`);
-  createdCard.appendChild(cardContent);
+  createdCard.classList.add("test-card-popup");
+  const createdInner = document.createElement("div");
+  createdInner.innerHTML = `
+    <div class="col test-card-dsc">
+      <div class="row flex">
+        <div class="col">
+          <img class="user-img" src="${userImg}" alt="user">
+        </div>
+        <div class="col test-name-loc">
+            <div class="row">
+                <p class="user-name">${userName}</p>
+            </div>
+            <div class="row">
+                <p class="user-location small-paragraph">
+                    ${userLoc}
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="row test-card-review">
+        <p class="user-review small-paragraph">
+            ${userRev}
+        </p>
+      </div>
+    </div>
+  `;
+  createdCard.appendChild(createdInner);
   popup.appendChild(createdCard);
+
+  const removePopup = () => {
+    const hasElement = document.querySelectorAll(".test-card-popup");
+    hasElement.forEach((elem) => {
+      if (hasElement.length > 1) {
+        console.log(hasElement);
+        console.log("removing previous popup");
+        elem.remove();
+      }
+    });
+  };
+
+  removePopup();
 };
 
-review.addEventListener("click", createPopup);
+for (let rev of reviews) {
+  rev.addEventListener("click", createPopup);
+}
+
+//review.addEventListener("click", createPopup);
 
 //alert reminder
 const setAlert = () => {
