@@ -2,15 +2,16 @@
 // Burger menu
 //
 
+//create overlay
+const overlay = document.createElement("div");
+overlay.classList.add("overlay-bg");
+document.querySelector("body").prepend(overlay);
+
 export const showBurgerMenu = () => {
   const burgerWrapper = document.querySelector(".burger-menu");
   const burgerMenu = document.querySelector(".burger-menu-card");
 
-  //create overlay
   //const pageWrapper = document.querySelector(".page-wrapper");
-  const overlay = document.createElement("div");
-  overlay.classList.add("overlay-bg");
-  document.querySelector("body").prepend(overlay);
   //console.log(document.querySelector("body"));
 
   burgerWrapper.addEventListener("click", () => {
@@ -61,7 +62,8 @@ window.addEventListener("load", carousel);
 //
 const popup = document.querySelector(".testimonials-popup");
 const reviews = document.querySelectorAll(".test-card-review");
-//const cards = document.querySelectorAll(".test-card");
+const close = document.querySelector(".testimonials-popup-close");
+console.log(close);
 //console.log(popup);
 //console.log(reviews);
 
@@ -103,24 +105,31 @@ const createPopup = (e) => {
   `;
   createdCard.appendChild(createdInner);
   popup.appendChild(createdCard);
-
-  const removePopup = () => {
-    const hasElement = document.querySelectorAll(".test-card-popup");
-    hasElement.forEach((elem) => {
-      if (hasElement.length > 1) {
-        console.log(hasElement);
-        console.log("removing previous popup");
-        elem.remove();
-      }
-    });
-  };
-
-  removePopup();
+  popup.classList.add("show-popup");
+  overlay.classList.add("show-overlay");
 };
+
+function removePopup() {
+  const hasElement = document.querySelectorAll(".test-card-popup");
+  hasElement.forEach((elem) => {
+    console.log("removing previous popup");
+    elem.remove();
+  });
+}
+
+function closePopup() {
+  popup.classList.remove("show-popup");
+  removePopup();
+  overlay.classList.remove("show-overlay");
+}
+
+overlay.addEventListener("click", closePopup);
 
 for (let rev of reviews) {
   rev.addEventListener("click", createPopup);
 }
+
+close.addEventListener("click", closePopup);
 
 //review.addEventListener("click", createPopup);
 

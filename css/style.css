@@ -2064,6 +2064,11 @@ input[type=submit]:focus {
     border: 1px solid var(--light_gray-color);
     z-index: 101;
     border-radius: 5px;
+    display: none;
+}
+
+.show-popup {
+    display: block;
 }
 
 .testimonials-popup-close {
