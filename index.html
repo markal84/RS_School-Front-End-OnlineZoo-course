@@ -93,8 +93,10 @@
                     <button id="prev" class="button button-slider rounded-circle absolute hide-on-media-320">&#8592;</button>
                     <button id="next" class="button button-slider rounded-circle absolute hide-on-media-320">&#8594;</button>    
                     <div id="carousel-wrapper">
-                        <div id="carousel">
-                            <div id="content" class="row relative">
+                        <div id="carousel" class="relative">
+                            <div id="content-left" class="slide row relative">
+                            </div>
+                            <div id="content" class="slide row relative">
                                 <div class="card">
                                     <div class="card-animate absolute flex flex-justify-center">
                                         <p>Pandas</p>
@@ -126,108 +128,6 @@
                                         </div>
                                         <div class="col card-icon">
                                             <img src="./assets/icons/pets_meat_fish.svg" alt="meat">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-animate absolute flex flex-justify-center">
-                                        <p>Gorillas</p>
-                                    </div>
-                                    <div class="col card-image">
-                                        <img src="./assets/images/pets_gorilla.png" alt="gorilla">
-                                    </div>
-                                    <div class="col card-descr flex-row">
-                                        <div class="col card-text">
-                                            <p class="uppercase">gorillas</p>
-                                            <p class="small-paragraph">Native to Congo</p>
-                                        </div>
-                                        <div class="col card-icon">
-                                            <img src="./assets/icons/pets_banana.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-animate absolute flex flex-justify-center">
-                                        <p>Gorillas</p>
-                                    </div>
-                                    <div class="col card-image">
-                                        <img src="./assets/images/pets_gorilla.png" alt="gorilla">
-                                    </div>
-                                    <div class="col card-descr flex-row">
-                                        <div class="col card-text">
-                                            <p class="uppercase">gorillas</p>
-                                            <p class="small-paragraph">Native to Congo</p>
-                                        </div>
-                                        <div class="col card-icon">
-                                            <img src="./assets/icons/pets_banana.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-animate absolute flex flex-justify-center">
-                                        <p>Gorillas</p>
-                                    </div>
-                                    <div class="col card-image">
-                                        <img src="./assets/images/pets_gorilla.png" alt="gorilla">
-                                    </div>
-                                    <div class="col card-descr flex-row">
-                                        <div class="col card-text">
-                                            <p class="uppercase">gorillas</p>
-                                            <p class="small-paragraph">Native to Congo</p>
-                                        </div>
-                                        <div class="col card-icon">
-                                            <img src="./assets/icons/pets_banana.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-animate absolute flex flex-justify-center">
-                                        <p>Gorillas</p>
-                                    </div>
-                                    <div class="col card-image">
-                                        <img src="./assets/images/pets_gorilla.png" alt="gorilla">
-                                    </div>
-                                    <div class="col card-descr flex-row">
-                                        <div class="col card-text">
-                                            <p class="uppercase">gorillas</p>
-                                            <p class="small-paragraph">Native to Congo</p>
-                                        </div>
-                                        <div class="col card-icon">
-                                            <img src="./assets/icons/pets_banana.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-animate absolute flex flex-justify-center">
-                                        <p>Gorillas</p>
-                                    </div>
-                                    <div class="col card-image">
-                                        <img src="./assets/images/pets_gorilla.png" alt="gorilla">
-                                    </div>
-                                    <div class="col card-descr flex-row">
-                                        <div class="col card-text">
-                                            <p class="uppercase">gorillas</p>
-                                            <p class="small-paragraph">Native to Congo</p>
-                                        </div>
-                                        <div class="col card-icon">
-                                            <img src="./assets/icons/pets_banana.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-animate absolute flex flex-justify-center">
-                                        <p>Gorillas</p>
-                                    </div>
-                                    <div class="col card-image">
-                                        <img src="./assets/images/pets_gorilla.png" alt="gorilla">
-                                    </div>
-                                    <div class="col card-descr flex-row">
-                                        <div class="col card-text">
-                                            <p class="uppercase">gorillas</p>
-                                            <p class="small-paragraph">Native to Congo</p>
-                                        </div>
-                                        <div class="col card-icon">
-                                            <img src="./assets/icons/pets_banana.svg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -300,9 +200,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <div id="content-right" class="slide row relative">
+                            </div>
                         </div> 
                     </div>
-
                     <div class="row row-flex pets-button">
                         <button class="button rounded-25">choose your favorite</button>
                     </div>
@@ -390,21 +291,21 @@
                             <div class="col test-card-dsc">
                                 <div class="row flex">
                                     <div class="col">
-                                        <img src="./assets/images/test_user1_icon.png" alt="user1">
+                                        <img class="user-img" src="./assets/images/test_user1_icon.png" alt="user1">
                                     </div>
                                     <div class="col test-name-loc">
                                         <div class="row">
-                                            <p>Michael John</p>
+                                            <p class="user-name">Michael John</p>
                                         </div>
                                         <div class="row">
-                                            <p class="small-paragraph">
+                                            <p class="user-location small-paragraph">
                                                 Local Austria &#x2022; Today
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row test-card-review">
-                                    <p class="small-paragraph">
+                                    <p class="user-review small-paragraph">
                                         The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.<br>
                                         The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.       
                                     </p>
@@ -415,21 +316,21 @@
                             <div class="col test-card-dsc">
                                 <div class="row flex">
                                     <div class="col">
-                                        <img src="./assets/images/test_user2_icon.png" alt="user2">
+                                        <img class="user-img" src="./assets/images/test_user2_icon.png" alt="user2">
                                     </div>
                                     <div class="col test-name-loc">
                                         <div class="row">
-                                            <p>Oskar Samborsky</p>
+                                            <p class="user-name">Oskar Samborsky</p>
                                         </div>
                                         <div class="row">
-                                            <p class="small-paragraph">
+                                            <p class="user-location small-paragraph">
                                                 Local Austria &#x2022; Yesterday
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row test-card-review">
-                                    <p class="small-paragraph">
+                                    <p class="user-review small-paragraph">
                                         Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. 
                                         The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
                                         The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
@@ -441,21 +342,21 @@
                             <div class="col test-card-dsc">
                                 <div class="row flex">
                                     <div class="col">
-                                        <img src="./assets/images/test_user3_icon.png" alt="user3">
+                                        <img class="user-img" src="./assets/images/test_user3_icon.png" alt="user3">
                                     </div>
                                     <div class="col test-name-loc">
                                         <div class="row">
-                                            <p>Fredericka Michelin</p>
+                                            <p class="user-name">Fredericka Michelin</p>
                                         </div>
                                         <div class="row">
-                                            <p class="small-paragraph">
+                                            <p class="user-location small-paragraph">
                                                 Local Austria &#x2022; Yestarday
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row test-card-review">
-                                    <p class="small-paragraph">
+                                    <p class="user-review small-paragraph">
                                         The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.<br>
                                         The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.       
                                     </p>

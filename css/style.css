@@ -2028,11 +2028,16 @@ input[type=submit]:focus {
 
 
 /* ===== Carousel ====== */
-#carousel {
-    overflow: auto;
+#carousel-wrapper {
+    overflow: hidden;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    max-width: 100%;
+    width: 1160px;
+}
+
+#carousel {
+    display: flex;
+    left: -100%;
 }
 
 #carousel::-webkit-scrollbar {
@@ -2040,16 +2045,16 @@ input[type=submit]:focus {
 }
 
 #content {
+    order: 1;
+}
+
+.slide {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 366px);
-    grid-template-rows: auto auto;
-    grid-auto-rows: 0px;
-    margin: 0 auto;
-    gap: 30px;
-    row-gap: 3px;
-    width: 2370px;
-    overflow: auto;
-    justify-content: unset !important;
+    grid-template-columns: repeat(3, 366px);
+    grid-template-rows: repeat(2, 466px);
+    column-gap: 30px;
+    row-gap: 30px;
+    width: 100%;
 }
 
 /* ===== Testimonials ====== */
@@ -2059,11 +2064,16 @@ input[type=submit]:focus {
     width: 318px;
     max-width: 100%;
     background-color: var(--white-color);
-    height: 420px; /* just fopr test */
     left: 25%;
     top: -16%;
     border: 1px solid var(--light_gray-color);
     z-index: 101;
+    border-radius: 5px;
+    display: none;
+}
+
+.show-popup {
+    display: block;
 }
 
 .testimonials-popup-close {
@@ -2078,6 +2088,16 @@ input[type=submit]:focus {
 .testimonials-popup-close i {
     font-size: 1.3rem;
     color: var(--orange-color);
+}
+
+.test-card-popup {
+    width: 80%;
+    border-radius: 20px;
+    padding: 0 2%;
+    background: var(--light_gray-color);
+    border: 2px solid var(--orange-color);
+    overflow: auto;
+    margin: 20px 36px 17px 17px;
 }
 
 /* ===== Donate site ====== */
