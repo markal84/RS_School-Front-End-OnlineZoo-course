@@ -2028,11 +2028,16 @@ input[type=submit]:focus {
 
 
 /* ===== Carousel ====== */
-#carousel {
-    overflow: auto;
+#carousel-wrapper {
+    overflow: hidden;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    max-width: 100%;
+    width: 1160px;
+}
+
+#carousel {
+    display: flex;
+    left: -100%;
 }
 
 #carousel::-webkit-scrollbar {
@@ -2040,16 +2045,16 @@ input[type=submit]:focus {
 }
 
 #content {
+    order: 1;
+}
+
+.slide {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 366px);
-    grid-template-rows: auto auto;
-    grid-auto-rows: 0px;
-    margin: 0 auto;
-    gap: 30px;
-    row-gap: 3px;
-    width: 2370px;
-    overflow: auto;
-    justify-content: unset !important;
+    grid-template-columns: repeat(3, 366px);
+    grid-template-rows: repeat(2, 466px);
+    column-gap: 30px;
+    row-gap: 30px;
+    width: 100%;
 }
 
 /* ===== Testimonials ====== */

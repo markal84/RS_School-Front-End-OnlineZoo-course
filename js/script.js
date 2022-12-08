@@ -33,29 +33,32 @@ window.addEventListener("load", showBurgerMenu);
 //  Carousel
 //
 
-const carousel = () => {
-  const gap = 30;
+const carouselGallery = document.querySelector("#carousel");
+const content = document.querySelector("#content");
+const contentLeft = document.querySelector("#content-left");
+const contentRight = document.querySelector("#content-right");
+const nextButton = document.querySelector("#next");
+const prevButon = document.querySelector("#prev");
 
-  const carousel = document.querySelector("#carousel");
-  const content = document.querySelector("#content");
-  const nextButton = document.querySelector("#next");
-  const prevButon = document.querySelector("#prev");
+function getArray(el) {
+  let clonedContent = el.cloneNode(true);
+  const cards = clonedContent.querySelectorAll(".card");
+  return [...cards];
+}
 
-  let width = carousel.offsetWidth;
-  let widthContent = content.offsetWidth;
-  window.addEventListener("resize", (e) => (width = carousel.offsetWidth));
-
-  nextButton.addEventListener("click", (e) => {
-    //console.log(widthContent + gap);
-    carousel.scrollBy(widthContent + gap, 0);
+function cloneContent(el) {
+  let array = getArray(content);
+  array.map((card) => {
+    el.append(card);
   });
+}
 
-  prevButon.addEventListener("click", (e) => {
-    carousel.scrollBy(-(widthContent + gap), 0);
-  });
-};
+(() => {
+  cloneContent(contentRight);
+  cloneContent(contentLeft);
+})();
 
-window.addEventListener("load", carousel);
+//window.addEventListener("load", carousel);
 
 //
 // Testimonials popup when width <= 640px
@@ -63,7 +66,7 @@ window.addEventListener("load", carousel);
 const popup = document.querySelector(".testimonials-popup");
 const reviews = document.querySelectorAll(".test-card-review");
 const close = document.querySelector(".testimonials-popup-close");
-console.log(close);
+//console.log(close);
 //console.log(popup);
 //console.log(reviews);
 
@@ -125,8 +128,13 @@ function closePopup() {
 
 overlay.addEventListener("click", closePopup);
 
-for (let rev of reviews) {
-  rev.addEventListener("click", createPopup);
+// only allow popup when page width < 640px - reload required
+
+if (window.innerWidth < 640) {
+  console.log("page width less than 640px - can create popup");
+  for (let rev of reviews) {
+    rev.addEventListener("click", createPopup);
+  }
 }
 
 close.addEventListener("click", closePopup);
